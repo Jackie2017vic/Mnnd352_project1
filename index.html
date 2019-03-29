@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Project 1 Cells</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage auto-height example." />
+    <meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,auto-height,full-screen" />
+    <meta name="Resource-type" content="Document" />
+
+    <link href="https://fonts.googleapis.com/css?family=Kirang+Haerang" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                verticalCentered: true,
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage','6thPage','7thPage'],
+                sectionsColor: ['white', 'white', 'white', 'white']
+            });
+        });
+    </script>
+
+    <style>
+    /* in file css styling */
+      .myContent{
+        min-height: 300px;
+        overflow: auto;
+      }
+      .row{width:!100%;height:auto;margin:30px;float:left;}
+      .splitLeft{
+        height:auto;
+        width:25%;
+        float:left;
+      }
+      .splitRight{
+        height:auto;
+        width:75%;
+        /*background-color: grey;*/
+        float:left;
+      }
+      .imageBox{
+        width:550px;
+        height:550px;
+        background-color: #fff;
+       margin-left: 50%;
+
+      }
+
+      p{
+        font-size: 1.2em;
+        text-align: left;
+        margin-left: 20%;
+        margin-top: 10%;
+      }
+    </style>
+
+</head>
+<body>
+  <ul id="menu"><!-- menu items -->
+      <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Inspiration</a></li>
+      <li data-menuanchor="secondPage"><a href="#secondPage">Stadia</a></li>
+      <li data-menuanchor="3rdPage"><a href="#3rdPage">Why 5g</a></li>
+      <li data-menuanchor="4thPage"><a href="#4thPage">Cell-based game platform</a></li>
+      <li data-menuanchor="5thPage"><a href="#5thPage">Mockup</a></li>
+      <li data-menuanchor="6thPage"><a href="#6thPage">Limits</a></li>
+
+
+      
+  </ul>
+
+<div id="fullpage">
+    <!-- section starts -->
+    <div class="section" id="section0">
+       <div class="myContent">
+          <h1>Inspirations</h1>
+          <h2><img src="img/Netflix.png"></h2>
+        </div>
+    </div>
+    <!-- section ends -->
+    <!-- section starts -->
+    <div class="section fp-auto-height" id="section1">
+        <div class="slide" id="slide1"><!-- horizontal slide -->
+          <div class="myContent">
+              <h1><img src="img/stadia1.png"></h1>
+            </div>
+        </div>
+        <div class="slide" id="slide2"><!-- second horizontal slide -->
+            <h1><img src="img/stadia2.png"></h1>
+        </div>
+    </div>
+    <!-- section ends -->
+    <!-- section starts -->
+    <div class="section fp-auto-height" id="section2">
+        <div class="myContent">
+          <h1>Why 5G</h1>
+          <h3>5G networks achieve these higher data rates by using higher frequency radio waves, in or near the millimeter wave band. 5G cells will be the size of a city block, as opposed to the cells in previous cellular networks which could be many kilometers across. Bascically, faster and no latency</h3>
+        </div>    
+        <div class="slide" id="slide1"><!-- horizontal slide -->
+          <div class="myContent">
+              <h1><img src="img/5g1.png"></h1>
+            </div>
+        </div>
+        <div class="slide" id="slide2"><!-- second horizontal slide -->
+
+            <h1><img src="img/5g2.png"></h1>
+        </div>
+
+         </div>
+    <!-- section ends -->
+
+ 
+
+<div class="section fp-auto-height" id="section3" style="background-color: #efef4f" >
+        <div class="myContent">
+          <h1>Cell-based game platform</h1>
+          <h2>I get to understand the Google stadia basing on the present network. They have to build dotted service centre to make it happen. My idea is that we can create a cell-based game streaming basing on the metro cells of the 5G network which is cheaper and easier in the near future. However, the same thing is you don't have to think of your money to get a new device. It's not the old school like PS4, Xbox and Nintendo switch. We don't force people to upgrade their hardware. All you need to do just press the subscribe button to use it like watching TV on Netflix.</h2>
+        </div>
+          <div class="slide" id="slide1"><!-- horizontal slide -->
+          <div class="myContent">
+              <h1><img src="img/google1.png"></h1>
+            </div>
+        </div>
+        <div class="slide" id="slide2"><!-- second horizontal slide -->
+
+            <h1><img src="img/cell1.png"></h1>
+        </div>
+        </div>
+
+
+    
+
+        <div class="section fp-auto-height" id="section4" style="background-color: white">
+        <div class="myContent">
+          <h1>Mockup</h1>
+          <h2>We can get access to play the game in a specific area which you can define how large it is, one cell, two cells or as large as the whole city. And we try to create the local-based game social community.</h2>
+        </div>
+          <div class="slide" id="slide1"><!-- horizontal slide -->
+          <div class="myContent">
+              <h1><img src="img/game selection.png"></h1>
+            </div>
+        </div>
+        <div class="slide" id="slide2"><!-- second horizontal slide -->
+            <h1><img src="img/Game intro.png"></h1>
+          </div> 
+                 <div class="slide" id="slide3"><!-- second horizontal slide -->
+            <h1><img src="img/cell Information.png"></h1>
+          </div> 
+                 <div class="slide" id="slide4"><!-- second horizontal slide -->
+            <h1><img src="img/Map - Cell.png"></h1>
+          </div> 
+                 <div class="slide" id="slide5"><!-- second horizontal slide -->
+            <h1><img src="img/Profile-individual.png"></h1>
+          </div> 
+                 <div class="slide" id="slide6"><!-- second horizontal slide -->
+            <h1><img src="img/Settings Category.png"></h1>
+          </div> 
+   
+      </div>
+
+        <div class="section fp-auto-height" id="section6" style="background-color: #white">
+        <div class="myContent">
+          <h1>Limits</h1>
+          <h2>As far as I know, This idea relies heavily on the infrastructure of 5G which will be happening in some way and due to the cells-based structure, it's hard to spread to the rural area.</h2>
+        </div>
+
+             <div class="row" style="background-color: #white">
+              <div class="imageBox">
+                <!-- img goes here -->
+                <h3><img src="img/cell_logo.png"></h3>
+            </div>
+         
+          </div>
+
+      </div>
+
+
+</body>
+</html>
